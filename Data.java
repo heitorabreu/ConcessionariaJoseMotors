@@ -6,10 +6,15 @@ public class Data{
     private int mes;
     private int ano;
 
-    public void setDia(){
-        do{
-            dia = input.nextInt(); input.nextLine();
-        }while(dia<1 || dia>31);
+    public Data() {
+    }
+
+    public void setDia(){        
+        do{            
+            this.dia = input.nextInt(); input.nextLine();
+            if(this.dia<1 || this.dia>31)
+                System.out.println("\nDia inválido.");
+        }while(this.dia<1 || this.dia>31);
     }
 
     public int getDia(){
@@ -18,8 +23,10 @@ public class Data{
 
     public void setMes() {
         do{
-            mes = input.nextInt(); input.nextLine();
-        }while(mes<1 || mes>12);
+            this.mes = input.nextInt(); input.nextLine();
+            if(this.mes<1 || this.mes>12)
+                System.out.println("\nMês inválido");
+        }while(this.mes<1 || this.mes>12);
     }
 
     public int getMes() {
@@ -28,8 +35,10 @@ public class Data{
 
     public void setAno(){
         do{
-            ano = input.nextInt(); input.nextLine();
-        }while(ano<1950 || ano>2050);
+            this.ano = input.nextInt(); input.nextLine();
+            if(this.ano<1950 || this.ano>2050)
+                System.out.println("\nAno inválido");
+        }while(this.ano<1950 || this.ano>2050);
     }
 
     public int getAno() {

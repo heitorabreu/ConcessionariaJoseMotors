@@ -1,5 +1,4 @@
-
-public class Funcionario{
+public abstract class Funcionario{
     private int rg;
     private String nome;    
     private Data nascimento;    
@@ -18,6 +17,10 @@ public class Funcionario{
         this.rg = rg;
         this.nome = nome;
         this.admissao = admissao;
+    }
+
+    public Funcionario(){
+        
     }
 
     public int getRg(){

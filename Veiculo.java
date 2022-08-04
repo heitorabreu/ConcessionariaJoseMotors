@@ -1,4 +1,4 @@
-public class Veiculo{
+public abstract class Veiculo{
     
     private int numChassi;
     private String marca;
@@ -7,10 +7,9 @@ public class Veiculo{
     private int km;
     private String tipoCombustivel;
     private double peso;
-    private boolean vendido;
+    private boolean vendido = false;
     
-    public Veiculo(int numChassi, String marca, String modelo, int ano, int km, String tipoCombustivel, double peso,
-            boolean vendido) {
+    public Veiculo(int numChassi, String marca, String modelo, int ano, int km, String tipoCombustivel, double peso) {
         this.numChassi = numChassi;
         this.marca = marca;
         this.modelo = modelo;
@@ -18,7 +17,10 @@ public class Veiculo{
         this.km = km;
         this.tipoCombustivel = tipoCombustivel;
         this.peso = peso;
-        this.vendido = vendido;
+    }
+
+    public Veiculo(){
+        
     }
 
     public int getNumChassi() {

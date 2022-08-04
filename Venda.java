@@ -1,5 +1,5 @@
-public class Venda{
-    
+public class Venda {
+
     private int idVenda;
     private Vendedor vendedorVenda;
     private Cliente clienteVenda;
@@ -7,7 +7,7 @@ public class Venda{
     private double valorVenda;
     private Data dataVenda;
     private Horario horarioVenda;
-    
+
     public Venda(int idVenda, Vendedor vendedorVenda, Cliente clienteVenda, Veiculo veiculoVenda, double valorVenda,
             Data dataVenda, Horario horarioVenda) {
         this.idVenda = idVenda;
@@ -17,6 +17,10 @@ public class Venda{
         this.valorVenda = valorVenda;
         this.dataVenda = dataVenda;
         this.horarioVenda = horarioVenda;
+    }
+
+    public Venda() {
+
     }
 
     public int getIdVenda() {
@@ -75,5 +79,4 @@ public class Venda{
         this.horarioVenda = horarioVenda;
     }
 
-    
 }
